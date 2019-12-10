@@ -15,7 +15,7 @@ When you handle your error, you code can continue to run.
 
 ## Definitions
 
-### try: / except:
+### try: / except/ finally:
 These blocks of code are used in conjunction to error handle. 
 ````
     try:
@@ -26,6 +26,19 @@ These blocks of code are used in conjunction to error handle.
         block of code
         block of code
         print(place_holder)
+    finally:
+        block that runs after
 ````
+
+### using the open() and with()
+When using open() you need to close the files you actually open!.
+
+you can skip this step using 'with':
+````
+with open() as <placeholder>:
+    <placeholder>:
+        placeholder.readlines
+````
+
 ### Exceptions
 These occur when an error occurs.

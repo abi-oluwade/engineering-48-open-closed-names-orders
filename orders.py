@@ -26,10 +26,20 @@ def open_print_close(file_name):
     finally:
         print('execution done!')
 
+def open_write_txt(file_name, item):
+    try:
+        with open(file_name, 'a') as file_to_write:
+            file_to_write.write(item + '\n')
+    except FileNotFoundError as error:
+        print('Check your file')
+        print('error')
+    finally:
+        print('execution done')
+
 # open_print_txt_file('orders.txt')
 # open_print_txt_file('order2.txt')
-open_print_close('orders.txt')
-
+# open_print_close('orders.txt')
+open_write_txt('orders.txt', 'cupcake')
 # print('Abi')
 
 # except:
